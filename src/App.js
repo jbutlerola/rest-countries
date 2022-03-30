@@ -7,12 +7,14 @@ import Error from "./components/Error";
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" exact element={<Countries />}></Route>
-        <Route path="/:name" element={<Country />}></Route>
-        <Route path="*" element={<Error />}></Route>
-      </Routes>
+      <main className="bg-gray-100 dark:bg-gray-900">
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<Countries />}></Route>
+          <Route path="/:name" element={<Country />}></Route>
+          <Route path="*" element={<Error />}></Route>
+        </Routes>
+      </main>
     </Router>
   );
 }
