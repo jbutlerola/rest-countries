@@ -11,7 +11,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact element={<Countries />}></Route>
-          <Route path="/:name" element={<Country />}></Route>
+          <Route path="/:capital" element={<Country />}></Route>
           <Route path="*" element={<Error />}></Route>
         </Routes>
       </main>
